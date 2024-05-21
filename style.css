@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe8c8; /* Beige background */
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffa62f; /* Orange header */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-logo {
+  height: 100px;
+  margin-right: 10px;
+}
+
+main {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fef1e6; /* Light peach for main content */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#section-container, #desk-container, #chair-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-card, .desk-card, .chair-card {
+  background-color: #fff3e6; /* Light peach cards */
+  border: 1px solid #fddcc1; /* Light orange border */
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.section-card:hover, .desk-card:hover {
+  background-color: #ffedce; /* Light yellowish on hover */
+}
+
+.hidden {
+  display: none;
+}
+
+.desk-card.available {
+  background-color: #c4e0a6; /* Light green for available desks */
+}
+
+.desk-card.full {
+  background-color: #feb2a8; /* Light red for full desks */
+}
+
+.chair-card.empty {
+  background-color: #c4e0a6; /* Light green for empty chairs */
+}
+
+.chair-card.occupied {
+  background-color: #feb2a8; /* Light red for occupied chairs */
+}
+
+/* Library-specific Styles */
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-card, .desk-card, .chair-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover, .desk-card:hover, .chair-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.library-logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.library-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.library-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.library-button {
+  background-color: #ffa62f; /* Orange button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.library-button:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+}
+
+/* Styled Go Back Button */
+.go-back-button {
+  background-color: #ffa62f; /* Orange button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+}
